@@ -6,7 +6,7 @@ MYINPUT = raw_input('Tell me a story! ')
 MAX_LENGTH = 80
 LONGSTR = 'short'
 
-# You code goes here
+LONGSTR = 'long' if len(MYINPUT)> MAX_LENGTH else LONGSTR
 
 OUTPUT = 'That certainly was a {} story!'.format(LONGSTR)
 print OUTPUT
